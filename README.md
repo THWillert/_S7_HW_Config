@@ -2,7 +2,7 @@
 
 ## Übersicht
 
-AutoIt-UDF für Siemens Step 7 zur einfachen Hardware-Konfiguration.
+AutoIt-UDF, für Siemens Step 7 V5.x, zur einfachen Hardware-Konfiguration.
 
 ## Funktionen
 
