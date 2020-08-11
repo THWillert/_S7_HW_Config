@@ -4,6 +4,8 @@
 
 AutoIt-UDF, für Siemens Step 7 V5.x, zur einfachen Hardware-Konfiguration.
 
+Basierend auf der [_S7_COM.au3](https://github.com/THWillert/_S7_COM).
+
 ## Funktionen
 
 ### Grundfunktionen:
