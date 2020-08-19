@@ -18,16 +18,16 @@ _S7_Simatic_AutomaticSave($oS7, False) ; Automatisches Speichern ausschalten - w
 If @error Then Exit
 
 ; Projekt-Object
-$oSt = $oS7.Projects("HW_Config_Test").Stations("SIMATIC 300(1)")
+Local $oSt = $oS7.Projects("HW_Config_Test").Stations("SIMATIC 300(1)")
 
 ; Rack in Project einfügen
-$oRack = _S7_HWConfig_Add_Rack($oSt, "rack1")
+Local $oRack = _S7_HWConfig_Add_Rack($oSt, "rack1")
 
 ; CPU in Rack einfügen
-$oCPU = _S7_HWConfig_Add_CPU($oRack, "CPU 317-2PN/DP", "6ES7 317-2EK14-0AB0")
-$oSub = _S7_HWConfig_Add_SubSystem($oCPU, "Kreis 1") ; SubSystem-Verbindung mit CPU
+Local $oCPU = _S7_HWConfig_Add_CPU($oRack, "CPU 317-2PN/DP", "6ES7 317-2EK14-0AB0")
+Local $oSub = _S7_HWConfig_Add_SubSystem($oCPU, "Kreis 1") ; SubSystem-Verbindung mit CPU
 
-; Konfiguration für CPU-Module - werden in Rack eingfüg
+; Konfiguration für CPU-Module - werden in Rack eingefügt
 Dim $aSlave[2][5]
 $aSlave[0][0] = "AO8x12Bit"
 $aSlave[0][1] = "6ES7 332-5HF00-0AB0"
